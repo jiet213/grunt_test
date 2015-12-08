@@ -1,0 +1,571 @@
+@charset "utf-8";
+/*
+ *  Name  hotword css
+ *  Copyright frontEnd
+ *  Description  @jeesica.cheng and jie.tang
+ *  Date 2015-4-7
+ *  upDate 2015-4-10
+ */
+/*--jie.tang css star--*/
+/* 热搜专题样式 */
+
+.hot_container {
+    border: 5px solid #f60;
+    border-bottom: none;
+    width: 1188px;
+    height: 100%;
+}
+.hot_container .hot_item {
+    border-bottom: 1px solid #dddddd;
+    height: auto;
+}
+.hot_item .hot_item_name {
+    width: 112px;
+    height: auto;
+    display: inline-block;
+    background: none repeat scroll 0 0 #f3f3f3;
+    border: solid 1px #fff;
+    text-align: center;
+    vertical-align: top;
+    float: left;
+    color: #9c9c9c;
+    font-size: 14px;
+    float: left;
+    line-height: 81px;
+}
+.hot_item .hot_item_list {
+    display: inline-block;
+    width: 1038px;
+    float: left;
+    padding: 15px 0 4px 32px;
+    border-left: 1px solid #dddddd;
+}
+.hot_item .hot_item_list ul {
+    width: 100%;
+}
+.hot_item .hot_item_list li {
+    float: left;
+}
+.hot_brands .hot_item_list li a {
+    color: #3c3c3c;
+    font-size: 12px;
+    display: inline-block;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 8px;
+    margin-right: 23px;
+    margin-bottom: 8px;
+    +margin-bottom: 12px;
+    line-height: 19px;
+    line-height: 21px\0;
+    line-height: 21px\9;
+    _line-height: 19px;
+}
+.hot_item .hot_item_list li a:hover {
+    color: #f22e00;
+    text-decoration: none;
+}
+.hot_item .hot_item_list li a.selected {
+    color: #fff;
+    background: #f22e00;
+}
+.hot_filter .hot_item_name {
+    line-height: 48px;
+    _line-height: 49px;
+}
+.hot_filter .hot_item_list {
+    padding-left: 34px;
+    padding-bottom: 3px;
+    +padding-bottom: 4px;
+    +padding-top: 14px;
+}
+.hot_filter .hot_item_list li a {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-family: Arial;
+    display: inline-block;
+    white-space: nowrap;
+    height: 20px;
+    padding: 0 6px;
+    margin-right: 7px;
+    margin-bottom: 12px;
+}
+.hot_detail .hot_detail_name {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 25px;
+    background: url("../images/hot_title.png") repeat-x;
+}
+.hot_detail .hot_detail_list {
+    padding: 16px 0 0 136px;
+    height: auto;
+    display: inline-block;
+}
+.hot_detail .hot_detail_list ul {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    display: inline-block;
+}
+.hot_detail .hot_detail_list li {
+    width: 25%;
+    float: left;
+}
+.hot_detail .hot_detail_list li a {
+    height: 20px;
+    margin-bottom: 12px;
+    color: #3c3c3c;
+    font-size: 12px;
+    display: inline-block;
+}
+.hot_detail .hot_detail_list li a:hover {
+    color: #f22e00;
+    text-decoration: none;
+}
+.hot_detail .hot_detail_list .moreLink {
+    float: right;
+    display: none;
+    font-size: 12px;
+    color: #3c3c3c;
+    margin-top: -4px;
+    +margin-top: 0px;
+    margin-right: 32px;
+    margin-bottom: 18px;
+    margin-bottom/*\**/: 16px\0;
+    margin-bottom/*\**/: 16px\9;
+    _margin-bottom: 18px;
+    padding-right: 14px;
+    position: relative;
+}
+.hot_detail .hot_detail_list .moreLink:hover {
+    color: #f22e00;
+    text-decoration: none;
+}
+.hot_detail .hot_detail_list .moreLink i {
+    position: absolute;
+    display: block;
+    background: url("../images/hotword.png") no-repeat;
+    width: 9px;
+    height: 5px;
+    overflow: hidden;
+    top: 8px;
+    top/*\**/: 7px\0;
+    top: 7px\9;
+    +top: 6px;
+    _top: 9px;
+    right: 0;
+}
+.hot_detail .hot_detail_list .more_fold i {
+    background-position: -69px 0;
+}
+.hot_detail .hot_detail_list .more_unfold i {
+    background-position: -69px -8px;
+}
+.hot_detail .hot_pages {
+    margin-bottom: 20px;
+    margin-top: -1px;
+    +margin-top: 3px;
+}
+/*翻页*/
+
+.page {
+    zoom: 1;
+    text-align: center;
+    line-height: 34px;
+}
+.page a {
+    overflow: hidden;
+    border: 1px solid #dedfe0;
+    height: 34px;
+}
+.page a, .page span {
+    display: inline-block;
+    margin-left: -5px;
+    vertical-align: middle;
+}
+.page a, .page span {
+    width: 34px;
+    color: #3c3c3c;
+}
+.page a:hover {
+    border-color: #f22e00;
+    color: #fff;
+    background-color: #f22e00;
+}
+.page .on {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    background: #f22e00;
+    border-color: #f22e00;
+}
+.page .pre, .page .next {
+    border: 0 none;
+    background: none;
+}
+.page .pre i, .page .next i {
+    display: inline-block;
+    background: url("../images/page_btn.jpg") left bottom no-repeat;
+    width: 6px;
+    height: 9px;
+    margin-top: 14px;
+    _margin-top: 8px;
+    vertical-align: top;
+}
+.page .next i {
+    background-position: right bottom;
+}
+.page .pre:hover, .page .next:hover {
+    background: none;
+}
+.page .pre:hover i {
+    _margin-top: 12px;
+    background-position: left top;
+}
+.page .next:hover i, .page .next.on i {
+    _margin-top: 12px;
+    background-position: right top;
+}
+/*---end---*/
+/*----jesscia.cheng css--start*/
+
+.wordheader {
+    width: 100%;
+    height: 259px;
+    text-align: center;
+}
+/*---商品展示css--*/
+
+.wordlist {
+    height: 40px;
+    line-height: 39px;
+    padding-left: 10px;
+}
+.wordlist a {
+    color: #3C3C3C;
+}
+.wordlist a:hover {
+    color: #f22e00;
+}
+.wordlist strong {
+    font-size: 14px;
+}
+.wordlist i {
+    font-style: normal;
+    font-family: "simsun";
+}
+.wordcontent .contleft {
+    width: 83.4%;
+}
+.wordcontent .contheader {
+    width: 100%;
+    background-color: #f7f7f7;
+    height: 38px;
+    border-bottom: 1px solid #f1f1f1;
+    display: block;
+}
+.wordcontent .wordtitle {
+    font-size: 14px;
+    margin-top: 7px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.wordcontent .wordsign {
+    margin-top: 9px;
+    margin-right: 16px;
+}
+.wordcontent .goodsshow {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.wordcontent .goodsshow ul li {
+    width: 194px;
+    height: 297px;
+    display: block;
+    float: left;
+    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+}
+.wordcontent .goodsshow .wordimg {
+    display: block;
+    width: 100%;
+    height: 185px;
+}
+.wordcontent .wordimg img {
+    padding-left: 9px;
+    padding-top: 9px;
+}
+.wordcontent .goodsshow .worddetail {
+    width: 178px;
+    padding-left: 18px;
+    display: block;
+    color: #3C3C3C;
+    line-height: 18px;
+    margin-top: 6px;
+    height: 36px;
+    overflow: hidden;
+}
+.wordcontent .worddetail:hover {
+    color: #f22e00;
+}
+.wordcontent .fnprice {
+    width: 178px;
+    padding-left: 18px;
+    margin-top: 3px;
+    overflow: hidden;
+}
+.wordcontent .fnprice em {
+    display: block;
+    float: left;
+    padding-top: 4px;
+}
+.wordcontent .fnprice span {
+    color: #F22E00;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    font-size: 18px;
+    margin-left: 6px;
+    display: block;
+    float: left;
+}
+.wordcontent .wordbuy {
+    padding: 2px 9px 0 9px;
+}
+.wordcontent .wordbuy strong {
+    border: 1px solid #eee;
+    float: left;
+    font-weight: 100;
+    height: 24px;
+    line-height: 24px;
+    width: 75px;
+}
+.wordcontent .word-mins {
+    border-right: 1px solid #eee;
+}
+.wordcontent .noclick {
+    cursor: not-allowed;
+}
+.wordcontent a.word-mins, .wordcontent a.word-add {
+    color: #ccc;
+    float: left;
+    font-family: monospace;
+    font-size: 18px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    width: 22px;
+}
+.wordcontent .word-add {
+    border-left: 1px solid #eee;
+}
+.wordcontent .word-mins:hover, .wordcontent .word-add:hover {
+    color: #f22e00;
+}
+.wordcontent .wordbuy input {
+    border: 0 none;
+    color: #3c3c3c;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px;
+    text-align: center;
+    width: 25px;
+}
+.wordcontent a.wordbutton {
+    display: block;
+    width: 81px;
+    height: 28px;
+    background: url(../images/hotword.png) no-repeat 0 -30px;
+    float: right;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.wordcontent .wordbutton:hover {
+    background-position: 0 -62px;
+    color: #fff;
+}
+/*---左侧商品列表---*/
+
+.wordcontent .contright {
+    width: 14%;
+    height: 1230px;
+    background-color: #f1f1f1;
+    padding-left: 25px;
+}
+.wordcontent .goodsclassify {
+    margin-bottom: 9px;
+}
+.wordcontent .contright h2 {
+    font-size: 12px;
+    font-weight: bold;
+    width: 100%;
+    height: 41px;
+    line-height: 53px;
+}
+.wordcontent .contword {
+    overflow: hidden;
+}
+.wordcontent .contword li {
+    height: 26px;
+    line-height: 26px;
+    float: left;
+    width: 100%;
+}
+.wordcontent .contword li a {
+    display: block;
+    color: #6c6c6c;
+}
+.wordcontent .contword li a:hover {
+    color: #f22e00;
+}
+.wordcontent .contword li span {
+    font-size: 24px;
+    display: block;
+    float: left;
+    padding-top: 2px;
+}
+.wordcontent .fenline {
+    background: url(../images/fenline.png) no-repeat;
+    width: 175px;
+    height: 1px;
+    margin-left: -17px;
+}
+.wordcontent .brandreco h2 {
+    height: 33px;
+    line-height: 40px;
+}
+/*---新款推荐---*/
+
+.wordcontent .hotsale {
+    margin-top: 16px;
+}
+.wordcontent a.changeword {
+    display: block;
+    width: 67px;
+    padding-right: 8px;
+    height: 23px;
+    border: 1px solid #E4E4E4;
+    border-radius: 3px;
+    margin-top: 7px;
+    margin-right: 15px;
+    background-color: #FEFEFE;
+    text-align: right;
+    line-height: 21px;
+    color: #3C3C3C;
+    background: url(../images/hotword.png) no-repeat -82px -1px;
+}
+.wordcontent .changeword:hover {
+    background-position: -82px -27px;
+    border-color: #9C9C9C;
+    color: #f22e00;
+}
+/*---新款推荐商品属性介绍----*/
+
+#salestyle {
+    width: 992px;
+    height: 506px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+#salesin {
+    width: 400%;
+}
+.wordcontent .goodspro {
+    height: 158px;
+    width: 992px;
+    padding-top: 10px;
+    border-bottom: 1px solid #F1F1F1;
+    overflow: hidden;
+}
+/*.goodspro:last-child{border:0 none;}*/
+
+.wordcontent .protitle {
+    margin-left: 14px;
+    margin-top: 8px;
+    width: 792px;
+    overflow: hidden;
+}
+.wordcontent .protitle a {
+    font-weight: bold;
+    color: #3c3c3c;
+}
+.wordcontent .protitle a:hover {
+    color: #f22e00;
+}
+.wordcontent .newstyle {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    float: left;
+}
+.wordcontent .property {
+    margin-left: 9px;
+    overflow: hidden;
+    float: left;
+    width: 810px;
+    margin-top: 18px;
+}
+.wordcontent .property h3 {
+    width: 72px;
+    float: left;
+}
+.wordcontent .prointro {
+    float: left;
+    width: 723px;
+}
+.wordcontent .prointro a {
+    display: block;
+    width: 144px;
+    height: 23px;
+    line-height: 21px;
+    border-radius: 3px;
+    border: 1px solid #E4E4E4;
+    text-align: center;
+    background-color: #FCFCFC;
+    float: right;
+    color: #3C3C3C;
+}
+.wordcontent .prointro a:hover {
+    border-color: #9C9C9C;
+    color: #f22e00;
+}
+.wordcontent .prointro p {
+    height: 72px;
+    overflow: hidden;
+}
+.wordcontent .prointro p span {
+    margin-right: 30px;
+}
+.wordcontent .protitle p {
+    margin-top: -3px;
+}
+.wordcontent .protitle p span {
+    color: #f22e00;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*---公共类----*/
+
+.w1180 {
+    width: 1180px;
+}
+.w1190 {
+    width: 1190px;
+}
+.m0a {
+    margin: 0 auto;
+}
+.rmb {
+    font-family: verdana;
+}
+/*---end----*/

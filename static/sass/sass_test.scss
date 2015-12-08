@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import "variables"; //或者@import "_variables";或者@import "_variables.scss";
+/* 主体样式 */
+
+//声明一行显示的混合变量
+@mixin one-line($max-width: 75px) {
+	max-width: $max-width;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  	white-space: nowrap;
+}
+//调用
+.container {
+    .item {
+    	margin: 0 auto;
+    	@include one-line;//参数使用默认值
+    }
+    .list {
+    	@include one-line(100px);//传递参数
+    }
+}
+
+/* 继承 */
+.inline {
+	display: inline-block;
+	overflow: hidden;
+}
+.item {
+	@extend .inline;
+	padding: 5px;
+}

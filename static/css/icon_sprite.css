@@ -1,0 +1,37 @@
+
+.m-g-footer .footer-map .map .footer-icon {
+  background-image: url("../images/index/footer.png");
+}
+.m-g-footer .footer-map .map .z-icon {
+  background-position: -6px -4px;
+}
+.m-g-footer .footer-map .map .q-icon {
+  background-position: -62px -4px;
+}
+.m-g-footer .footer-map .map .k-icon {
+  background-position: -120px -4px;
+}
+.m-g-footer .footer-map .map .t-icon {
+  background-position: -177px -4px;
+}
+
+.m-g-footer .footer-map .map .t-icon333 {
+  background-image: url("../images/index/b.png") no-repeat;
+}
+
+.m-g-footer .site-info .logowall .shgs {
+  width: 96px;
+  background: url("../images/index/footer.png") -10px -105px no-repeat;
+}
+.m-g-footer .site-info .logowall .shwl {
+  width: 112px;
+  background: url("../images/index/footer.png") -120px -105px no-repeat;
+}
+.m-g-footer .site-info .logowall .cxwz {
+  width: 112px;
+  background: url("../images/index/footer.png") -10px -152px no-repeat;
+}
+.m-g-footer .site-info .logowall .kxwz {
+  width: 109px;
+  background: url("../images/index/footer.png") -132px -152px no-repeat;
+}
